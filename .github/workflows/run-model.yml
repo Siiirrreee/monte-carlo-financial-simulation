@@ -27,8 +27,8 @@ jobs:
         run: jupyter nbconvert --to notebook --execute --inplace notebooks/monte_carlo_walkthrough.ipynb
       - name: Commit results, charts and notebook outputs
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "Jeremiah"
+          git config user.email "jeremiahj.johnson@yahoo.com"
           git add results visuals notebooks README.md
           git diff --cached --quiet || git commit -m "Update results, charts and notebook outputs [skip ci]"
           git push
